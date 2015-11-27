@@ -28,7 +28,10 @@ This SDK is implemented for C-Language only, so I tried to ported it to Python.
 
    8. please try to activate 'move', 'action', 'jump', 'posture' functions...
      - cnt.move(speed, turn_spped) ; speed = [-100:100],turn_speed = [-100:100]
-     - cnt.action(param)           ; param = [0:9]
-     - cnt.jump(param)             ; param = [0:1]
-     - cnt.posture(param)          ; param = [0:2]
+     - cnt.action(param)           ; param = [0:9] ~ enum[stop, spin, tap, slowshake, 
+                                           metronome, oudulation, spinjump, spintoposture, spiral,slalom]
+     - cnt.jump(param)             ; param = [0:1] ~ enum[long, high]
+     - cnt.posture(param)          ; param = [0:2] ~ enum[standing, jumper, kicker]
   
+   9. ... and when you are finished
+     - >> cnt.terminate()
